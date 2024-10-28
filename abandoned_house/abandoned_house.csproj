@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B56654D6-55D8-4B0C-BA81-3B78D370DC48}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>abandoned_house</RootNamespace>
+    <AssemblyName>abandoned_house</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bedroom1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__candid-image-photography-natural-textures-highly-r__83839.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__candid-image-photography-natural-textures-highly-r__83840.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__candid-image-photography-natural-textures-highly-r__53279.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\889a4443-75ee-4f4e-91ba-c6a63f2d38ab.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\889a4443-75ee-4f4e-91ba-c6a63f2d38ab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person-lying-on-the-grass-shattered-glass-aro_aH3eXgk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wind-Mark_DiAngelo-1940285615.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_4wZXKqCr_1729779751521_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_pB1-tuZc_1729779904855_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_LtJ6SvF8_1729780034840_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_BPMXQCzl_1729780231595_raw %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_GzkhEp6R_1729780924817_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_focXgPES_1729781093429_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_BGIs2yUe_1729781428452_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_yyyZqSFr_1729781680777_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_F6GZuN-k_1729781789072_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitchen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hiddenDoor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snoring-Popup_Pixels-869228912.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Footsteps-SoundBible.com-534261997.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Light Bulb Breaking-SoundBible.com-53066515.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cupboard Door Close-SoundBible.com-399662278.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Audience_Applause-Matthiew11-1206899159.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female_Scream_Horror-NeoPhyTe-138499973.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\talking.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fightfists.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fightsword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rainexit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\runningexit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thank1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
