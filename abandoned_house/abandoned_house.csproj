@@ -173,5 +173,20 @@
   <ItemGroup>
     <None Include="Resources\thank1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rainghost.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rainwin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rainlose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\climblose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hiddenLose.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

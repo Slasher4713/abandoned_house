@@ -535,12 +535,13 @@ namespace abandoned_house
                     pictureBox.BackgroundImage = Properties.Resources.talking;
                     break;
                 case 23:
-                    pictureBox.BackgroundImage = Properties.Resources.rainexit;
+                    pictureBox.BackgroundImage = Properties.Resources.rainExit;
                     outputLabel.Text = "You open the door and smell the sweet, sweet fresh air. You run away happily. Do you want to play again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
                     break;
                 case 24:
+                    pictureBox.BackgroundImage = Properties.Resources.hiddenLose;
                     scream.Play();
                     outputLabel.Text = "Not wanting to go through the door, you look around a bit more. You don't notice it, but a ghost slowly creaps up behind you. You turn around, and so shocked from the ghost you pass out. You die. Do you want to play again?";
                     option1Label.Text = "Yes";
@@ -560,47 +561,47 @@ namespace abandoned_house
 
                     break;
                 case 25:
-                    pictureBox.BackgroundImage = Properties.Resources.fightfists;
+                    pictureBox.BackgroundImage = Properties.Resources.fightFists;
                     scream.Play();
                     outputLabel.Text = "You attempt to fight the ghost. You throw your fists at him. However, your fist goes straight through him. The ghost pulls out a gun and shoots you. Do you want to play again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
                     break;
                 case 26:
-                    pictureBox.BackgroundImage = Properties.Resources.fightsword;
+                    pictureBox.BackgroundImage = Properties.Resources.fightSword;
                     outputLabel.Text = "The sword that you picked up suddenly glows. You slash the ghost with the sword, killing it. The house suddenly starts to disapear, leaving you in the middle of the woods. You escaped! Do you want to play again? ";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
                     break;
                 case 27:
-                    pictureBox.BackgroundImage = Properties.Resources.rainexit;
+                    pictureBox.BackgroundImage = Properties.Resources.rainExit;
                     outputLabel.Text = "You walk over to the door and you open it. The cold air burns your throat. Just as you thought you were free, you hear something behind you. Out of the corner of your eye, you see a ghost. What will you do?";
                     option1Label.Text = "Run out the doors";
                     option2Label.Text = "Stand still";
                     break;
                 case 28:
-                    pictureBox.BackgroundImage = Properties.Resources.runningexit;
+                    pictureBox.BackgroundImage = Properties.Resources.runningExit;
                     outputLabel.Text = "You run outside, and start to sprint away.";
                     option1Label.Text = "";
                     option2Label.Text = "";
                     Refresh();
                     Thread.Sleep(500);
-                    pictureBox.BackgroundImage = Properties.Resources.rainexit;
+                    pictureBox.BackgroundImage = Properties.Resources.rainExit;
                     Refresh();
                     Thread.Sleep(500);
-                    pictureBox.BackgroundImage = Properties.Resources.runningexit;
+                    pictureBox.BackgroundImage = Properties.Resources.runningExit;
                     Refresh();
                     Thread.Sleep(500);
-                    pictureBox.BackgroundImage = Properties.Resources.rainexit;
+                    pictureBox.BackgroundImage = Properties.Resources.rainExit;
                     Refresh();
                     Thread.Sleep(500);
-                    pictureBox.BackgroundImage = Properties.Resources.runningexit;
+                    pictureBox.BackgroundImage = Properties.Resources.runningExit;
                     Refresh();
                     Thread.Sleep(500);
-                    pictureBox.BackgroundImage = Properties.Resources.rainexit;
+                    pictureBox.BackgroundImage = Properties.Resources.rainExit;
                     Refresh();
                     Thread.Sleep(500);
-                    pictureBox.BackgroundImage = Properties.Resources.runningexit;
+                    pictureBox.BackgroundImage = Properties.Resources.runningExit;
 
                     if (sprain == 1)
                     {
@@ -614,24 +615,28 @@ namespace abandoned_house
                     }
                     break;
                 case 29:
+                    pictureBox.BackgroundImage = Properties.Resources.rainGhost;
                     scream.Play();
                     outputLabel.Text = "As you stand still, the ghost finds you an easy target to kill. The ghost almost feels sad killing you, because you stand there helpless. The ghost eventually makes up his mind and kills you. Do you want to play again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
                     break;
                 case 30:
+                    pictureBox.BackgroundImage = Properties.Resources.rainWin;
                     outputLabel.Text = "You gain speed, going faster and faster. The murmers of the ghost fade out as you run into the woods. You escaped! Do you want to play again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
                     break;
                 case 31:
+                    pictureBox.BackgroundImage = Properties.Resources.rainLose;
                     scream.Play();
                     outputLabel.Text = "As you're running, you fall over. Your sprained ankle hurts way too much to continue. The ghost waltzes over to you, and puts the rest of your shame out. Do you want to try again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
                     break;
                 case 97:
-                    scream.Play();
+                    pictureBox.BackgroundImage = Properties.Resources.climbLose;
+                    scream.Play();  
                     outputLabel.Text = "While you are trying to climb back upstairs, a ghost steadily sneeks up on you. Just as you are about to make it up, the ghost kills you. Do you want to play again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";

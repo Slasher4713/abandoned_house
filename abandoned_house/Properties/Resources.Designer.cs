@@ -102,6 +102,16 @@ namespace abandoned_house.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap climbLose {
+            get {
+                object obj = ResourceManager.GetObject("climbLose", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap closet {
             get {
                 object obj = ResourceManager.GetObject("closet", resourceCulture);
@@ -132,9 +142,9 @@ namespace abandoned_house.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fightfists {
+        internal static System.Drawing.Bitmap fightFists {
             get {
-                object obj = ResourceManager.GetObject("fightfists", resourceCulture);
+                object obj = ResourceManager.GetObject("fightFists", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -142,9 +152,9 @@ namespace abandoned_house.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fightsword {
+        internal static System.Drawing.Bitmap fightSword {
             get {
-                object obj = ResourceManager.GetObject("fightsword", resourceCulture);
+                object obj = ResourceManager.GetObject("fightSword", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,6 +203,16 @@ namespace abandoned_house.Properties {
         internal static System.Drawing.Bitmap hiddenDoor {
             get {
                 object obj = ResourceManager.GetObject("hiddenDoor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hiddenLose {
+            get {
+                object obj = ResourceManager.GetObject("hiddenLose", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -250,9 +270,9 @@ namespace abandoned_house.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rainexit {
+        internal static System.Drawing.Bitmap rainExit {
             get {
-                object obj = ResourceManager.GetObject("rainexit", resourceCulture);
+                object obj = ResourceManager.GetObject("rainExit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -260,9 +280,39 @@ namespace abandoned_house.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap runningexit {
+        internal static System.Drawing.Bitmap rainGhost {
             get {
-                object obj = ResourceManager.GetObject("runningexit", resourceCulture);
+                object obj = ResourceManager.GetObject("rainGhost", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rainLose {
+            get {
+                object obj = ResourceManager.GetObject("rainLose", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rainWin {
+            get {
+                object obj = ResourceManager.GetObject("rainWin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap runningExit {
+            get {
+                object obj = ResourceManager.GetObject("runningExit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
