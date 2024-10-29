@@ -188,5 +188,17 @@
   <ItemGroup>
     <None Include="Resources\hiddenLose.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ho Ho Ho St Nick-SoundBible.com-1954250969.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scary_Sound-Mark_DiAngelo-1101865305.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sad_Trombone-Joe_Lamb-665429450.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tree_Fall_Small-Daniel_Simion-1639156552.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

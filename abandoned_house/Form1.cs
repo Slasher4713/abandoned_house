@@ -20,6 +20,7 @@ namespace abandoned_house
         int sprain = 0;
         Random randGen = new Random();
         SoundPlayer scream = new SoundPlayer(Properties.Resources.scream);
+        SoundPlayer foot = new SoundPlayer(Properties.Resources.footstepWood);
         public Form1()
         {
             InitializeComponent();
@@ -383,7 +384,6 @@ namespace abandoned_house
                     }
                     break;
                 case 6:
-                    SoundPlayer foot = new SoundPlayer(Properties.Resources.footstepWood);
                     foot.Play();
                     outputLabel.Text = "In the hall there are stairs, a right room and a left room.";
                     option1Label.Text = "left room";
@@ -431,6 +431,7 @@ namespace abandoned_house
                     // imagebox.Image = Properties.Resources.whatever its called
                     break;
                 case 11:
+                    foot.Play();
                     option3Button.Visible = false;
                     outputLabel.Text = "You walk down a long hallway. You hear a spooky noise ";
                     option1Label.Text = "";
@@ -444,6 +445,8 @@ namespace abandoned_house
                     pictureBox.BackgroundImage = Properties.Resources.knife;
                     break;
                 case 12:
+                    SoundPlayer spooky = new SoundPlayer(Properties.Resources.spooky);
+                    spooky.Play();
                     outputLabel.Text = "You see a worn down bedroom. Go Back?";
                     option1Label.Text = "No";
                     option2Label.Text = "Yes";
@@ -451,6 +454,8 @@ namespace abandoned_house
                     pictureBox.BackgroundImage = Properties.Resources.bedroomTwo;
                     break;
                 case 13:
+                    SoundPlayer findSword = new SoundPlayer(Properties.Resources.findSword);
+                    findSword.Play();
                     outputLabel.Text = "You found a sword!";
                     pictureBox.BackgroundImage = Properties.Resources.honshuSword;
                     Refresh();
@@ -462,6 +467,8 @@ namespace abandoned_house
                     pictureBox.BackgroundImage = Properties.Resources.closet;
                     break;
                 case 14:
+                    SoundPlayer sad = new SoundPlayer(Properties.Resources.sad);
+                    sad.Play();
                     outputLabel.Text = "You already took the sword ";
                     option1Label.Text = "";
                     option2Label.Text = "";
@@ -473,6 +480,8 @@ namespace abandoned_house
                     option2Label.Text = "Yes";
                     break;
                 case 15:
+                    SoundPlayer breaks = new SoundPlayer(Properties.Resources.floorBreak);
+                    breaks.Play();
                     outputLabel.Text = "The floor caves in, and you fall through";
                     pictureBox.BackgroundImage = Properties.Resources.broken;
                     Refresh();
