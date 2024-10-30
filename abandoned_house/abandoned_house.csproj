@@ -200,5 +200,17 @@
   <ItemGroup>
     <None Include="Resources\Tree_Fall_Small-Daniel_Simion-1639156552.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Swoosh 1-SoundBible.com-231145780.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neck_snap-Vladimir-719669812.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hello-SoundBible.com-218208532.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thunder-Mike_Koenig-315681025.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

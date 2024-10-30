@@ -45,7 +45,7 @@
             this.outputLabel.ForeColor = System.Drawing.Color.White;
             this.outputLabel.Location = new System.Drawing.Point(12, 9);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(712, 91);
+            this.outputLabel.Size = new System.Drawing.Size(629, 91);
             this.outputLabel.TabIndex = 0;
             this.outputLabel.Text = "Output Label";
             // 
@@ -110,8 +110,8 @@
             // 
             this.pictureBox.Location = new System.Drawing.Point(12, 103);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(712, 440);
-            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox.Size = new System.Drawing.Size(629, 440);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox.TabIndex = 8;
             this.pictureBox.TabStop = false;
             // 
@@ -120,7 +120,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(736, 679);
+            this.ClientSize = new System.Drawing.Size(651, 679);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.option3Button);
             this.Controls.Add(this.option3Label);

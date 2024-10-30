@@ -216,6 +216,15 @@ namespace abandoned_house.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream hello {
+            get {
+                return ResourceManager.GetStream("hello", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap hiddenDoor {
@@ -366,9 +375,27 @@ namespace abandoned_house.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream snap {
+            get {
+                return ResourceManager.GetStream("snap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream spooky {
             get {
                 return ResourceManager.GetStream("spooky", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream swoosh {
+            get {
+                return ResourceManager.GetStream("swoosh", resourceCulture);
             }
         }
         
@@ -398,6 +425,15 @@ namespace abandoned_house.Properties {
         internal static System.IO.UnmanagedMemoryStream thud {
             get {
                 return ResourceManager.GetStream("thud", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream thunder {
+            get {
+                return ResourceManager.GetStream("thunder", resourceCulture);
             }
         }
         

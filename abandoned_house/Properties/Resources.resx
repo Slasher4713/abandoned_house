@@ -166,6 +166,9 @@
   <data name="hallway" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\889a4443-75ee-4f4e-91ba-c6a63f2d38ab.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hello" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hello-SoundBible.com-218208532.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="hiddenDoor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hiddenDoor.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,8 +214,14 @@
   <data name="Sleep" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\freepik__candid-image-photography-natural-textures-highly-r__83840.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="snap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\neck_snap-Vladimir-719669812.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="spooky" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Scary_Sound-Mark_DiAngelo-1101865305.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="swoosh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Swoosh 1-SoundBible.com-231145780.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="talking" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\talking.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -222,6 +231,9 @@
   </data>
   <data name="thud" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cupboard Door Close-SoundBible.com-399662278.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="thunder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thunder-Mike_Koenig-315681025.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="wind" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wind-Mark_DiAngelo-1940285615.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
