@@ -342,8 +342,14 @@ namespace abandoned_house
                     outputLabel.Text = "You can't go back to sleep.";
                     option1Label.Text = "";
                     option2Label.Text = "";
+                    option1Button.Enabled = false;
+                    option2Button.Enabled = false;
+                    option3Button.Enabled = false;
                     Refresh();
-                    Thread.Sleep(3000);
+                    Thread.Sleep(2000);
+                    option1Button.Enabled = true;
+                    option2Button.Enabled = true;
+                    option3Button.Enabled = true;
                     page = 3;
                     DisplayPage();
                     break;
@@ -369,8 +375,14 @@ namespace abandoned_house
                     option1Label.Text = "...";
                     option2Label.Text = "";
                     pictureBox.Image = Properties.Resources.window;
+                    option1Button.Enabled = false;
+                    option2Button.Enabled = false;
+                    option3Button.Enabled = false;
                     Refresh();
-                    Thread.Sleep(1000);
+                    Thread.Sleep(1500);
+                    option1Button.Enabled = true;
+                    option2Button.Enabled = true;
+                    option3Button.Enabled = true;
                     hope = randGen.Next(1, 101);
 
                     if (hope <= 10)
@@ -436,8 +448,14 @@ namespace abandoned_house
                     option1Label.Text = "";
                     option2Label.Text = "";
                     pictureBox.Image = Properties.Resources.longHallway;
+                    option1Button.Enabled = false;
+                    option2Button.Enabled = false;
+                    option3Button.Enabled = false;
                     Refresh();
                     Thread.Sleep(1500);
+                    option1Button.Enabled = true;
+                    option2Button.Enabled = true;
+                    option3Button.Enabled = true;
                     outputLabel.Text = "A knife suddenly flies at you!";
                     option1Label.Text = "Dodge the knife";
                     option2Label.Text = "Catch the knife";
@@ -457,8 +475,14 @@ namespace abandoned_house
                     findSword.Play();
                     outputLabel.Text = "You found a sword!";
                     pictureBox.Image = Properties.Resources.honshuSword;
+                    option1Button.Enabled = false;
+                    option2Button.Enabled = false;
+                    option3Button.Enabled = false;
                     Refresh();
                     Thread.Sleep(1500);
+                    option1Button.Enabled = true;
+                    option2Button.Enabled = true;
+                    option3Button.Enabled = true;
                     sword = 1;
                     outputLabel.Text = "Do you want to go back?";
                     option1Label.Text = "No, check closet";
@@ -472,8 +496,14 @@ namespace abandoned_house
                     option1Label.Text = "";
                     option2Label.Text = "";
                     pictureBox.Image = Properties.Resources.closet;
+                    option1Button.Enabled = false;
+                    option2Button.Enabled = false;
+                    option3Button.Enabled = false;
                     Refresh();
                     Thread.Sleep(1500);
+                    option1Button.Enabled = true;
+                    option2Button.Enabled = true;
+                    option3Button.Enabled = true;
                     outputLabel.Text = "Do you want to go back?";
                     option1Label.Text = "No, check closet";
                     option2Label.Text = "Yes";
