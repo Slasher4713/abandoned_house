@@ -12,17 +12,20 @@ using System.Media;
 
 namespace abandoned_house
 {
-    public partial class Form1 : Form
+    public partial class abandonedHouse : Form
     {
+        //Global varibles
         int page = 1;
         int sword = 0;
         int hope;
         int sprain = 0;
+        //Random number generator
         Random randGen = new Random();
+        //Global soundplayers
         SoundPlayer scream = new SoundPlayer(Properties.Resources.scream);
         SoundPlayer foot = new SoundPlayer(Properties.Resources.footstepWood);
         SoundPlayer clap = new SoundPlayer(Properties.Resources.clap);
-        public Form1()
+        public abandonedHouse()
         {
             InitializeComponent();
             DisplayPage();
@@ -30,13 +33,10 @@ namespace abandoned_house
 
         private void option1Button_Click(object sender, EventArgs e)
         {
+            //Determine pages
             if (page == 1)
             {
                 page = 2;
-            }
-            else if (page == 2)
-            {
-                //Nothing here
             }
             else if (page == 3)
             {
@@ -45,10 +45,6 @@ namespace abandoned_house
             else if (page == 4)
             {
                 page = 5;
-            }
-            else if (page == 5)
-            {
-               
             }
             else if (page == 6)
             {
@@ -68,6 +64,7 @@ namespace abandoned_house
             }
             else if (page == 10)
             {
+                //If the sword is collected, go to a different page
                 if (sword == 0)
                 {
                     page = 13;
@@ -93,10 +90,6 @@ namespace abandoned_house
             {
                 page = 10;
             }
-            else if (page == 15)
-            {
-               
-            }
             else if (page == 16)
             {
                 page = 18;
@@ -107,6 +100,7 @@ namespace abandoned_house
             }
             else if (page == 18)
             {
+                //If the sword is collected, go to a different page
                 if (sword == 0)
                 {
                     page = 25;
@@ -152,10 +146,6 @@ namespace abandoned_house
             {
                 page = 28;
             }
-            else if (page == 28)
-            {
-
-            }
             else if (page == 29)
             {
                 page = 1;
@@ -172,19 +162,16 @@ namespace abandoned_house
             {
                 page = 1;
             }
-
+            //Display the page it's on
             DisplayPage();
         }
 
         private void option2Button_Click(object sender, EventArgs e)
         {
+            //Determine the page that it will go to
             if (page == 1)
             {
                 page = 4;
-            }
-            else if (page == 2)
-            {
-
             }
             else if (page == 3)
             {
@@ -193,10 +180,6 @@ namespace abandoned_house
             else if (page == 4)
             {
                 page = 6;
-            }
-            else if (page == 5)
-            {
-
             }
             else if (page == 6)
             {
@@ -214,10 +197,6 @@ namespace abandoned_house
             {
                 page = 6;
             }
-            else if (page == 10)
-            {
-
-            }
             else if (page == 11)
             {
                 page = 17;
@@ -233,10 +212,6 @@ namespace abandoned_house
             else if (page == 14)
             {
                 page = 6;
-            }
-            else if (page == 15)
-            {
-
             }
             else if (page == 16)
             {
@@ -286,10 +261,6 @@ namespace abandoned_house
             {
                 page = 29;
             }
-            else if (page == 28)
-            {
-
-            }
             else if (page == 29)
             {
                 page = 99;
@@ -307,6 +278,7 @@ namespace abandoned_house
                 page = 99;
             }
 
+            //Display the page it's on
             DisplayPage();
         }
 
@@ -316,14 +288,18 @@ namespace abandoned_house
             {
                 page = 12;
             }
+
+            //Display the page it's on
             DisplayPage();
         }
 
         private void DisplayPage()
         {
+            //Don't display option 3
             option3Label.Text = "";
             switch (page)
             {
+                //Display the picture, sound, options, information of the page
                 case 1:
                     SoundPlayer wind = new SoundPlayer(Properties.Resources.wind);
                     wind.Play();
@@ -345,6 +321,7 @@ namespace abandoned_house
                     option1Button.Enabled = false;
                     option2Button.Enabled = false;
                     option3Button.Enabled = false;
+                    //Show a page for a bit, and then go back to a different page
                     Refresh();
                     Thread.Sleep(2000);
                     option1Button.Enabled = true;
@@ -354,7 +331,6 @@ namespace abandoned_house
                     DisplayPage();
                     break;
                 case 3:
-
                     outputLabel.Text = "Do you try to go back to sleep?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
@@ -378,6 +354,7 @@ namespace abandoned_house
                     option1Button.Enabled = false;
                     option2Button.Enabled = false;
                     option3Button.Enabled = false;
+                    //Show a page for a bit, and then go back to a different page
                     Refresh();
                     Thread.Sleep(1500);
                     option1Button.Enabled = true;
@@ -385,6 +362,7 @@ namespace abandoned_house
                     option3Button.Enabled = true;
                     hope = randGen.Next(1, 101);
 
+                    //Random chance of survival
                     if (hope <= 10)
                     {
                         page = 8;
@@ -429,6 +407,8 @@ namespace abandoned_house
                     pictureBox.Image = Properties.Resources.closet;
                     break;
                 case 10:
+
+                    //Check to see if sword has already been taken
                     if (sword == 0)
                     {
                         page = 13;
@@ -439,7 +419,6 @@ namespace abandoned_house
                         page = 14;
                         DisplayPage();
                     }
-                    // imagebox.Image = Properties.Resources.whatever its called
                     break;
                 case 11:
                     foot.Play();
@@ -515,7 +494,8 @@ namespace abandoned_house
                     pictureBox.Image = Properties.Resources.broken;
                     Refresh();
                     Thread.Sleep(1500);
-                        hope = randGen.Next(1, 101);
+                    hope = randGen.Next(1, 101);
+
                     if (hope <= 50)
                     {
                         page = 21;
@@ -687,7 +667,7 @@ namespace abandoned_house
                     break;
                 case 97:
                     pictureBox.Image = Properties.Resources.climbLose;
-                    scream.Play();  
+                    scream.Play();
                     outputLabel.Text = "While you are trying to climb back upstairs, a ghost steadily sneeks up on you. Just as you are about to make it up, the ghost kills you. Do you want to play again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";

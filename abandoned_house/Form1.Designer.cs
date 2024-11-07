@@ -1,6 +1,6 @@
 ﻿namespace abandoned_house
 {
-    partial class Form1
+    partial class abandonedHouse
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(abandonedHouse));
             this.outputLabel = new System.Windows.Forms.Label();
             this.option1Label = new System.Windows.Forms.Label();
             this.option2Label = new System.Windows.Forms.Label();
@@ -115,7 +116,7 @@
             this.pictureBox.TabIndex = 8;
             this.pictureBox.TabStop = false;
             // 
-            // Form1
+            // abandonedHouse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -129,8 +130,9 @@
             this.Controls.Add(this.option2Label);
             this.Controls.Add(this.option1Label);
             this.Controls.Add(this.outputLabel);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "abandonedHouse";
+            this.Text = "Abandoned House";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
 
