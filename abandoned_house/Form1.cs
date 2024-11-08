@@ -430,6 +430,7 @@ namespace abandoned_house
                     option1Button.Enabled = false;
                     option2Button.Enabled = false;
                     option3Button.Enabled = false;
+                    //Give some suspense with waiting and then show different information on the page
                     Refresh();
                     Thread.Sleep(1500);
                     option1Button.Enabled = true;
@@ -457,6 +458,7 @@ namespace abandoned_house
                     option1Button.Enabled = false;
                     option2Button.Enabled = false;
                     option3Button.Enabled = false;
+                    //Show that you found a sword for a bit, and then ask if you want to go back
                     Refresh();
                     Thread.Sleep(1500);
                     option1Button.Enabled = true;
@@ -496,6 +498,7 @@ namespace abandoned_house
                     Thread.Sleep(1500);
                     hope = randGen.Next(1, 101);
 
+                    //Random 50% chance of spraining ankle 
                     if (hope <= 50)
                     {
                         page = 21;
@@ -575,6 +578,7 @@ namespace abandoned_house
                     option2Label.Text = "No";
                     break;
                 case 98:
+                    //If you have the sword, go to a winning page
                     if (sword == 1)
                     {
                         page = 26;
@@ -614,6 +618,7 @@ namespace abandoned_house
                     outputLabel.Text = "You run outside, and start to sprint away.";
                     option1Label.Text = "";
                     option2Label.Text = "";
+                    //Animation of running
                     Refresh();
                     Thread.Sleep(500);
                     pictureBox.Image = Properties.Resources.rainExit;
@@ -633,6 +638,7 @@ namespace abandoned_house
                     Thread.Sleep(500);
                     pictureBox.Image = Properties.Resources.runningExit;
 
+                    //If you have a sprained ankle, you lose
                     if (sprain == 1)
                     {
                         page = 31;
@@ -681,6 +687,7 @@ namespace abandoned_house
                     option2Label.Text = "";
                     Refresh();
                     Thread.Sleep(1000);
+                    //Close the program
                     Close();
                     break;
             }
