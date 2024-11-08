@@ -698,7 +698,6 @@ namespace abandoned_house
                     Close();
                     break;
             }
-
         }
     }
 }
