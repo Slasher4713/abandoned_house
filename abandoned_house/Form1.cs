@@ -162,6 +162,7 @@ namespace abandoned_house
             {
                 page = 1;
             }
+
             //Display the page it's on
             DisplayPage();
         }
@@ -297,6 +298,7 @@ namespace abandoned_house
         {
             //Don't display option 3
             option3Label.Text = "";
+
             switch (page)
             {
                 //Display the picture, sound, options, information of the page
@@ -373,6 +375,7 @@ namespace abandoned_house
                         page = 7;
                         DisplayPage();
                     }
+
                     break;
                 case 6:
                     foot.Play();
@@ -419,6 +422,7 @@ namespace abandoned_house
                         page = 14;
                         DisplayPage();
                     }
+
                     break;
                 case 11:
                     foot.Play();
@@ -509,6 +513,7 @@ namespace abandoned_house
                         page = 20;
                         DisplayPage();
                     }
+
                     break;
                 case 16:
                     SoundPlayer swoosh = new SoundPlayer(Properties.Resources.swoosh);
@@ -578,6 +583,7 @@ namespace abandoned_house
                     option2Label.Text = "No";
                     break;
                 case 98:
+
                     //If you have the sword, go to a winning page
                     if (sword == 1)
                     {
@@ -649,6 +655,7 @@ namespace abandoned_house
                         page = 30;
                         DisplayPage();
                     }
+
                     break;
                 case 29:
                     pictureBox.Image = Properties.Resources.rainGhost;
